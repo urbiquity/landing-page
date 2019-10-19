@@ -28,7 +28,7 @@
 
 .problem-section {
     @include section-common-style;
-    height: auto;
+    background: grey;
     &__content {
         height: 100vh;
         position: absolute; 
@@ -48,9 +48,11 @@
         color: white;
         h3{
             @include general-text--bold;
+            font-size: 48px;
         }
         p{
             @include general-text;
+            font-size: 28px;
         }
     }
     figure {
@@ -63,7 +65,7 @@
 
 .specifics-section{
     @include section-common-style;
-
+    height: 100vh;
     background-color: #101930;
     &__content{
         justify-content: space-around;
@@ -76,11 +78,21 @@
     &__card{
         margin: 0 1rem 0 1rem;
         width: 24rem;
+        h3 {
+            @include general-text--bold;
+            color: $primary;
+        }
+        p {
+            @include general-text;
+        }
     }
 }
 
 .solution-section {
     @include section-common-style;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
     h1 {
         @include header-text--black;
         color: $primary;
@@ -93,10 +105,24 @@
         display: flex;
         flex-direction: row;
         max-width: 24rem;
+        margin: 2rem 0 2rem 0;
 
         img {
             margin-right: 2rem;
             width: 50%;
+            border-right: 1px solid lightgrey;
+            padding: 0 2rem 0 2rem; 
+            height: 150px;
+        }
+
+        .item-text{
+            h3 {
+                @include general-text--bold;
+                color: $primary;
+            }
+            p {
+                @include general-text;
+            }
         }
     }
 }
@@ -104,13 +130,92 @@
 .team-section {
     @include section-common-style;
     background-image: url('../images/team-bg.png');
+    // background-color: #B3BFDE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    h1 {
+        @include header-text--black;
+        color: white;
+    }
+    &__content {
+
+    }
+    &__item{
+        padding: 2rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 2px 2px hsla(0,0,0,0.6);
+        }
+        p{
+            @include general-text--bold;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px hsla(0,0,0,0.6);
+        }
+    }
 }
 
 .footer-section {
     height: 50px;
-    background-color: #101930;
+    background-color: #0d162d;
     span {
         @include general-text;
         color: white;
     }
+}
+@media only screen and (max-width:767px){
+    .overview-section{
+        &__content{
+            p{
+                max-width: 80%;;
+            }
+        }
+    }
+    .problem-section{
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width:1023px){
+
+    .problem-section {
+        @include section-common-style;
+        background: darkgrey;
+        &__content {
+            margin-top: 3rem;
+            height: auto;
+            position: absolute; 
+            z-index: 1; 
+            width: 100%;
+            text-align: center;
+            padding: 2rem;
+            h1{
+                font-size: 30px;
+                color: white;
+            }
+        }
+        
+        &__problem-item{
+            color: white;
+            h3{
+                @include general-text--bold;
+                font-size: 24px;
+            }
+            p{
+                @include general-text;
+                font-size: 20px;
+            }
+        }
+    }
+
 }
