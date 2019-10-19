@@ -14,18 +14,19 @@
     </head>
     <body>
         <div class="wrapper">
-            <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top justify-content-between">
+            <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-between">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.svg" alt="logo" width="50">
                 </a>
                 <div class="d-flex flex-row-reverse align-items-baseline">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span id="toggler" class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="custom-nav navbar-nav">
                             <a class="nav-item active" href="#overview">Overview</a>
-                            <a class="nav-item" href="#problem">General Problem</a>
+                            <a class="nav-item d-none d-md-block" href="#problem">General Problem</a>
+                            <a class="nav-item d-block d-md-none" href="#problem-mob">General Problem</a>
                             <a class="nav-item" href="#specifics">Specifics</a>
                             <a class="nav-item" href="#solution">Solution</a>
                             <a class="nav-item" href="#team">Team</a>
@@ -47,22 +48,30 @@
                 </div>
             </section>
             <!-- end of overview section -->
-            <section id="problem" class="problem-section">
+            
+            <!-- problem on md, lg -->
+            <hr id="problem-mob" class="d-block d-md-none m-0">
+            <section id="problem" class="problem-section d-none d-md-block">
                 <div class="problem-section__content d-flex flex-column pt-5 pb-5">
                     <h1 style="text-shadow: 2px 2px rgb(0,0,0,0.6)">
                         GENERAL PROBLEM
                     </h1>
-                    <div id="A" class="problem-section__problem-item">
-                        <h3>FLOOD</h3>
-                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br/> Quisquam eaque praesentium earum accusantium! </p>
-                    </div>
-                    <div id="B" class="problem-section__problem-item">
-                        <h3>LANDSLIDE</h3>
-                        <p>Quisquam eaque praesentium earum accusantium! </p>
-                    </div>
-                    <div id="C" class="problem-section__problem-item">
-                        <h3>FOREST COVER</h3>
-                        <p>Asperiores alias quas saepe libero nam suscipit unde. Fuga earum,<br/> doloremque ea quae adipisci aliquam voluptatum quia.</p>
+                    <div>
+                        <div class="">
+                            <h3>High Risk Urban Planning</h3>
+                        </div>
+                        <div id="A" class="problem-section__problem-item">
+                            <h3>FLOOD</h3>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br/> Quisquam eaque praesentium earum accusantium! </p>
+                        </div>
+                        <div id="B" class="problem-section__problem-item">
+                            <h3>LANDSLIDE</h3>
+                            <p>Quisquam eaque praesentium earum accusantium! </p>
+                        </div>
+                        <div id="C" class="problem-section__problem-item">
+                            <h3>FOREST COVER</h3>
+                            <p>Asperiores alias quas saepe libero nam suscipit unde. Fuga earum,<br/> doloremque ea quae adipisci aliquam voluptatum quia.</p>
+                        </div>
                     </div>
                 </div>
                 <figure class="d-none d-lg-block">
@@ -73,7 +82,36 @@
                     </div>
                 </figure>
             </section>
-            <section id="specifics" class="specifics-section">
+            <!-- problem on mobile -->
+            <hr id="problem-mob" class="d-none d-md-block m-0">
+            <section id="problem-mob" class="problem-section d-block d-md-none">
+                <div class="problem-section__content d-flex flex-column pt-5 pb-5">
+                    <h1 style="text-shadow: 2px 2px rgb(0,0,0,0.6)">
+                        GENERAL PROBLEM
+                    </h1>
+                    <div class="content-item">
+                        <div class="mb-5 high-risk">
+                            <h3>"High Risk Urban Planning"</h3>
+                        </div>
+                        <hr />
+                        <div class="problem-section__problem-item">
+                            <h3>FLOOD</h3>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br/> Quisquam eaque praesentium earum accusantium! </p>
+                        </div>
+                        <hr />
+                        <div class="problem-section__problem-item">
+                            <h3>LANDSLIDE</h3>
+                            <p>Quisquam eaque praesentium earum accusantium! </p>
+                        </div>
+                        <hr />
+                        <div class="problem-section__problem-item">
+                            <h3>FOREST COVER</h3>
+                            <p>Asperiores alias quas saepe libero nam suscipit unde. Fuga earum,<br/> doloremque ea quae adipisci aliquam voluptatum quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="specifics" class="specifics-section  d-flex justify-content-center">
                 <!-- <div id="particles-js"></div> -->
                 <div class="specifics-section__content d-flex flex-column">
                     <div class="d-flex flex-row justify-content-center pt-5">
@@ -81,24 +119,24 @@
                             SPECIFICS
                         </h1>
                     </div>
-                    <div class="specifics-section__cards-container d-flex flex-column flex-md-row justify-content-center">
-                        <div class="card specifics-section__card">
-                            <img class="card-img-top" src="images/specifics-1.jpg" alt="Card image cap" width="200">
-                            <div class="card-body">
+                    <div class="specifics-section__cards-container d-flex flex-column flex-md-row">
+                        <div class="specifics-section__card mb-3 mb-md-0 mr-0 mr-md-5">
+                            <img src="images/specifics-1.jpg" alt="Card image cap">
+                            <div class="specifics-section__card-body">
                                 <h3 class="card-title">Card title</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
-                        <div class="card specifics-section__card">
-                            <img class="card-img-top" src="images/specifics-2.jpg" alt="Card image cap" width="200">
-                            <div class="card-body">
+                        <div class="specifics-section__card  mb-3 mb-md-0 mr-0 mr-md-5">
+                            <img src="images/specifics-2.jpg" alt="Card image cap">
+                            <div class="specifics-section__card-body">
                                 <h3 class="card-title">Card title</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
-                        <div class="card specifics-section__card">
-                            <img class="card-img-top" src="images/specifics-3.jpg" alt="Card image cap" width="200">
-                            <div class="card-body">
+                        <div class="specifics-section__card  mb-3 mb-md-0 mr-0 mr-md-5">
+                            <img src="images/specifics-3.jpg" alt="Card image cap">
+                            <div class="specifics-section__card-body">
                                 <h3 class="card-title">Card title</h3>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
@@ -153,26 +191,26 @@
                         TEAM
                     </h1>
                 </div>
-                <div class="team-section__content d-flex flex-row justify-content-center">
+                <div class="team-section__content d-flex flex-column flex-md-row justify-content-center">
                     <div class="team-section__item">
                         <img src="images/team-1.jpg" alt="">
-                        <p>Lorem Ipsum Dolor</p>
+                        <p>Chris Dianne Calamba</p>
                     </div>
                     <div class="team-section__item">
                         <img src="images/team-2.jpg" alt="">
-                        <p>Lorem Ipsum Dolor</p>
+                        <p>Jan Koichi Dayanan</p>
                     </div>
                     <div class="team-section__item">
                         <img src="images/team-3.jpg" alt="">
-                        <p>Lorem Ipsum Dolor</p>
+                        <p>Glyde Harryn Llait</p>
                     </div>
                     <div class="team-section__item">
                         <img src="images/team-4.jpg" alt="">
-                        <p>Lorem Ipsum Dolor</p>
+                        <p>George Albert Macatiog</p>
                     </div>
                     <div class="team-section__item">
                         <img src="images/team-5.JPG" alt="">
-                        <p>Lorem Ipsum Dolor</p>
+                        <p>John Valle</p>
                     </div>
                 </div>
             </section>

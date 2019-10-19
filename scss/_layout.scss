@@ -41,6 +41,12 @@
             @include header-text--black;
             color: white;
         }
+        .content-item{
+            .high-risk{
+                @include general-text--bold;
+                color: $primary;
+            }
+        }
     }
     
 
@@ -49,10 +55,12 @@
         h3{
             @include general-text--bold;
             font-size: 48px;
+            color: white;
         }
         p{
             @include general-text;
             font-size: 28px;
+            color: black;
         }
     }
     figure {
@@ -65,19 +73,27 @@
 
 .specifics-section{
     @include section-common-style;
-    height: 100vh;
     background-color: #101930;
     &__content{
         justify-content: space-around;
         height: 100vh;
         h1 {
+            margin-top: 3rem;
             @include header-text--black;
             color: white;
         }
     }
     &__card{
-        margin: 0 1rem 0 1rem;
-        width: 24rem;
+        background-color: white;
+        max-width: 300px;
+        border-radius: 10px;
+        img{
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            object-fit: cover;
+            width: 300px;
+            height: 150px;
+        }
         h3 {
             @include general-text--bold;
             color: $primary;
@@ -85,6 +101,9 @@
         p {
             @include general-text;
         }
+    }
+    &__card-body{
+        padding: 2rem;
     }
 }
 
@@ -138,8 +157,9 @@
         @include header-text--black;
         color: white;
     }
-    &__content {
+    &__content{
 
+    flex-wrap: wrap;
     }
     &__item{
         padding: 2rem; 
@@ -149,8 +169,8 @@
         align-items: center;
         img {
             border-radius: 50%;
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             border: 5px solid white;
             box-shadow: 2px 2px hsla(0,0,0,0.6);
@@ -176,13 +196,42 @@
 @media only screen and (max-width:767px){
     .overview-section{
         &__content{
+            h1{
+                font-size: 40px;
+                margin: 2rem 0 3rem 0;
+            }
             p{
                 max-width: 80%;;
             }
         }
     }
     .problem-section{
-        height: 100vh;
+        &__content{
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+    .specifics-section{
+        height: auto;
+        &__content{
+            height: auto;
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+    .solution-section{
+        height: auto;
+        h1{
+            font-size: 40px;
+        }
+    }
+    .team-section{
+        height: auto;
+        h1 {
+            font-size: 40px;
+        }
     }
 }
 
