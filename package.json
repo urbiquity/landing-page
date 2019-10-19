@@ -1,0 +1,23 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/urbiquity/landing-page/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbiquity/landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urbiquity/landing-page/issues"
+  },
+  "homepage": "https://github.com/urbiquity/landing-page#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

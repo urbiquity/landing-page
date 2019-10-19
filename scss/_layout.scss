@@ -1,0 +1,116 @@
+@mixin section-common-style{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.overview-section {
+    @include section-common-style;
+    background-image: url('../images/overview-bg.png');
+    &__content{
+        height: 100vh;
+
+        h1 {
+            margin: 0;
+            @include header-text--black;
+            color: white;
+        }
+
+        p{
+            @include general-text;
+            max-width: 50%;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+.problem-section {
+    @include section-common-style;
+    height: auto;
+    &__content {
+        height: 100vh;
+        position: absolute; 
+        z-index: 1; 
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        justify-content: space-around;
+        h1{
+            @include header-text--black;
+            color: white;
+        }
+    }
+    
+
+    &__problem-item{
+        color: white;
+        h3{
+            @include general-text--bold;
+        }
+        p{
+            @include general-text;
+        }
+    }
+    figure {
+        margin: 0;
+        video {
+            filter: grayscale(3);
+        }
+    }
+}
+
+.specifics-section{
+    @include section-common-style;
+
+    background-color: #101930;
+    &__content{
+        justify-content: space-around;
+        height: 100vh;
+        h1 {
+            @include header-text--black;
+            color: white;
+        }
+    }
+    &__card{
+        margin: 0 1rem 0 1rem;
+        width: 24rem;
+    }
+}
+
+.solution-section {
+    @include section-common-style;
+    h1 {
+        @include header-text--black;
+        color: $primary;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+    &__solution-item{
+        display: flex;
+        flex-direction: row;
+        max-width: 24rem;
+
+        img {
+            margin-right: 2rem;
+            width: 50%;
+        }
+    }
+}
+
+.team-section {
+    @include section-common-style;
+    background-image: url('../images/team-bg.png');
+}
+
+.footer-section {
+    height: 50px;
+    background-color: #101930;
+    span {
+        @include general-text;
+        color: white;
+    }
+}

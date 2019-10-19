@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+  html body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; }
+
+@font-face {
+  font-family: 'Barlow Black';
+  src: url("../fonts/Barlow-Black.ttf"); }
+
+@font-face {
+  font-family: 'Barlow Regular';
+  src: url("../fonts/Barlow-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Red Hat Black';
+  src: url("../fonts/RedHatDisplay-Black.ttf"); }
+
+@font-face {
+  font-family: 'Red Hat Bold';
+  src: url("../fonts/RedHatDisplay-Black.ttf"); }
+
+.custom-nav .nav-item {
+  font-family: 'Red Hat Bold';
+  font-size: 18px;
+  color: white;
+  padding: 0 1rem 0 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 300ms; }
+  .custom-nav .nav-item.active {
+    color: #85C33D; }
+
+.custom-nav .nav-item:hover {
+  color: #85C33D; }
+
+.overview-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-image: url("../images/overview-bg.png"); }
+  .overview-section__content {
+    height: 100vh; }
+    .overview-section__content h1 {
+      margin: 0;
+      font-family: 'Red Hat Black';
+      font-size: 72px;
+      color: white; }
+    .overview-section__content p {
+      font-family: 'Barlow Regular';
+      font-size: 18px;
+      max-width: 50%;
+      text-align: center;
+      color: white; }
+
+.problem-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  height: auto; }
+  .problem-section__content {
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    justify-content: space-around; }
+    .problem-section__content h1 {
+      font-family: 'Red Hat Black';
+      font-size: 72px;
+      color: white; }
+  .problem-section__problem-item {
+    color: white; }
+    .problem-section__problem-item h3 {
+      font-family: 'Barlow Black';
+      font-size: 24px; }
+    .problem-section__problem-item p {
+      font-family: 'Barlow Regular';
+      font-size: 18px; }
+  .problem-section figure {
+    margin: 0; }
+    .problem-section figure video {
+      filter: grayscale(3); }
+
+.specifics-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-color: #101930; }
+  .specifics-section__content {
+    justify-content: space-around;
+    height: 100vh; }
+    .specifics-section__content h1 {
+      font-family: 'Red Hat Black';
+      font-size: 72px;
+      color: white; }
+  .specifics-section__card {
+    margin: 0 1rem 0 1rem;
+    width: 24rem; }
+
+.solution-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; }
+  .solution-section h1 {
+    font-family: 'Red Hat Black';
+    font-size: 72px;
+    color: #204197; }
+  .solution-section__content {
+    display: flex;
+    flex-direction: column; }
+  .solution-section__solution-item {
+    display: flex;
+    flex-direction: row;
+    max-width: 24rem; }
+    .solution-section__solution-item img {
+      margin-right: 2rem;
+      width: 50%; }
+
+.team-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-image: url("../images/team-bg.png"); }
+
+.footer-section {
+  height: 50px;
+  background-color: #101930; }
+  .footer-section span {
+    font-family: 'Barlow Regular';
+    font-size: 18px;
+    color: white; }
