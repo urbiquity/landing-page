@@ -23,7 +23,7 @@ $(window).scroll(function () {
     $('.custom-nav a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= 400 + scrollPos && refElement.position().top + 400 + refElement.height() > scrollPos) {
+        if (refElement.position().top <= 200 + scrollPos && refElement.position().top + 200 + refElement.height() > scrollPos) {
             $('.custom-nav a').removeClass("active"); //added to remove active class from all a elements
             currLink.addClass("active");
         }

@@ -112,6 +112,7 @@
 
 .solution-section {
     @include section-common-style;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; 
@@ -184,6 +185,26 @@
             text-align: center;
             color: white;
             text-shadow: 2px 2px hsla(0,0,0,0.6);
+        }
+    }
+}
+
+.milestone-section{
+    // @include section-common-style;
+    height: auto;
+    background-color: #28394c;  
+    .timeline {
+        .container {
+            .content {
+                h1 {
+                    @include general-text--bold;
+                    font-size: 36px;
+                    color: $primary;
+                }
+                h2 {
+                    @include general-text--bold;
+                }
+            }
         }
     }
 }

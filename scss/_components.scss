@@ -16,3 +16,13 @@
         color: $secondary;
     }
 }
+
+#get-started-btn{
+    border-radius: 20px;
+    background-color: $secondary;
+    border-color: $secondary;
+}
+#get-started-btn:hover{
+    cursor: pointer;
+    background-color: #73ab33;
+}

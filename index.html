@@ -10,6 +10,7 @@
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/timeline.css">
         <title>Urbiquity</title>
     </head>
     <body>
@@ -29,6 +30,7 @@
                             <a class="nav-item d-block d-md-none" href="#problem-mob">General Problem</a>
                             <a class="nav-item" href="#specifics">Specifics</a>
                             <a class="nav-item" href="#solution">Solution</a>
+                            <a class="nav-item" href="#milestones">Milestones</a>
                             <a class="nav-item" href="#team">Team</a>
                         </div>
                     </div>
@@ -123,47 +125,73 @@
                         <div class="specifics-section__card mb-3 mb-md-0 mr-0 mr-md-3">
                             <img src="images/specifics-1.jpg" alt="Card image cap">
                             <div class="specifics-section__card-body">
-                                <h3 class="card-title">Card title</h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3 class="card-title">3,500+</h3>
+                                <p class="card-text">3,500 families were affected due to rising waters last August, 2019.</p>
                             </div>
                         </div>
                         <div class="specifics-section__card  mb-3 mb-md-0 mr-0 mr-md-3">
                             <img src="images/specifics-2.jpg" alt="Card image cap">
                             <div class="specifics-section__card-body">
-                                <h3 class="card-title">Card title</h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3 class="card-title">Landslides</h3>
+                                <p class="card-text">Heavy rain caused a landslide along MacArthur Highway in Davao City.</p>
                             </div>
                         </div>
                         <div class="specifics-section__card  mb-3 mb-md-0 mr-0 mr-md-3">
                             <img src="images/specifics-3.jpg" alt="Card image cap">
                             <div class="specifics-section__card-body">
-                                <h3 class="card-title">Card title</h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3 class="card-title">- 54, 750</h3>
+                                <p class="card-text">The forest cover declined by 54, 750 hectares hectares per year between 1990 and 2010</p>
                             </div>
                         </div>
                    </div>
                 </div>
             </section>
             <section id="solution" class="solution-section">
-                <div class="d-flex flex-row justify-content-center mt-5">
+                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
                     <h1>
                         SOLUTION
                     </h1>
+                    <a href="https://app.urbiquity-tech.co"><button id="get-started-btn" class="btn btn-primary">Get Started</button></a>
                 </div>
+                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                    <div class="collapse" id="solution-2-collapse">      
+                        <img src="images/collapse-3.png" alt="">
+                        <hr/>
+                    </div>
+                    <div class="collapse" id="solution-4-collapse">      
+                        <img src="images/collapse-2.png" alt="">
+                        <hr/>
+                    </div>
+                    <div class="collapse" id="solution-3-collapse">      
+                        <img src="images/collapse-1.png" alt="">
+                        <hr/>
+                    </div>
+                    <div class="collapse" id="solution-1-collapse">      
+                        <img src="images/collapse-4.png" alt="">
+                        <hr/>
+                    </div>
+                </div>
+                
                 <div class="solution-section_content-wrapper  d-flex flex-column flex-md-row justify-content-around">
                     <div class="solution-section__content">
-                        <div class="solution-section__solution-item">
-                            <img src="images/solution-1.svg" alt="">
-                            <div class="item-text">
-                                <h3>Risk Assessment</h3>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                            </div>
-                        </div>
                         <div class="solution-section__solution-item">
                             <img src="images/solution-2.svg" alt="">
                             <div class="item-text">
                                 <h3>Data Cross Checking</h3>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                                <p>Cross checks data across multiple sources</p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#solution-2-collapse" role="button" aria-expanded="false" aria-controls="solution-2-collapse">
+                                    View Solution
+                                </a>
+                            </div>
+                        </div>
+                        <div class="solution-section__solution-item">
+                            <img src="images/solution-4.svg" alt="">
+                            <div class="item-text">
+                                <h3>Machine Learning</h3>
+                                <p>Utilizes machine learning for further optimization and increase in accuracy of assessment</p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#solution-4-collapse" role="button" aria-expanded="false" aria-controls="solution-4-collapse">
+                                    View Solution
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -172,15 +200,70 @@
                             <img src="images/solution-3.svg" alt="">
                             <div class="item-text">
                                 <h3>Civil Reporting</h3>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                                <p>Allows civillians to send incident reports for utilization of the application</p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#solution-3-collapse" role="button" aria-expanded="false" aria-controls="solution-3-collapse">
+                                    View Solution
+                                </a>
                             </div>
                         </div>
                         <div class="solution-section__solution-item">
-                            <img src="images/solution-4.svg" alt="">
+                            <img src="images/solution-1.svg" alt="">
                             <div class="item-text">
-                                <h3>Machine Learning</h3>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                                <h3>Risk Assessment</h3>
+                                <p>Assesses risks based on NASA data, civil reporting, and other data sources with continuous optimization using machine learning.</p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#solution-1-collapse" role="button" aria-expanded="false" aria-controls="solution-1-collapse">
+                                    View Solution
+                                </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="milestones" class="milestone-section d-flex justify-content-center p-5">
+                <div class="timeline">
+                    <div class="container left">
+                        <div class="content">
+                            <h1>TIMELINE AND MILESTONES</h1>
+                            <h2>Quarter 4, 2019</h2>
+                            <hr/>
+                            <small>Stage</small>
+                            <p>Foster Dev Community</p>
+                            <hr/>
+                            <small>Milestone</small>
+                            <p>App launching in Davao</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>Quarter 1, 2020</h2>
+                            <hr/>
+                            <small>Stage</small>
+                            <p>Validation,<br>Revision Model</p>
+                            <hr/>
+                            <small>Milestone</small>
+                            <p>Securization, iOS Compatibility</p>
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <h2>Quarter 2, 2020</h2>
+                            <hr/>
+                            <small>Stage</small>
+                            <p>Introduce to other places<br>outside Davao (national)</p>
+                            <hr/>
+                            <small>Milestone</small>
+                            <p>Deployment to other areas nationally.</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>Quarter 3, 2020</h2>
+                            <hr/>
+                            <small>Stage</small>
+                            <p>Growth</p>
+                            <hr/>
+                            <small>Milestone</small>
+                            <p>Globally used and<br>recognized by NASA</p>
                         </div>
                     </div>
                 </div>
